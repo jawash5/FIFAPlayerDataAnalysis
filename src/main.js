@@ -18,5 +18,5 @@ new Vue({
   render: h => h(App)
 });
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 

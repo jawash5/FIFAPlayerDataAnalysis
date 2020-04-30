@@ -11,13 +11,14 @@
             }
         },
         mounted () {
-            this.axios.get('localhost:5000/data')
+            console.log('ok')
+            this.axios.get('http://127.0.0.1:5000/data')
                 .then(response => {
-                    this.content = response
+                    this.content = response;
                     console.log('ok')
                 })
                 .catch(function (error) {
-                    console.log(error)
+                    console.log(error.response)
                 })
         }
     }
