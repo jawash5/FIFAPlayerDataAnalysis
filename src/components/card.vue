@@ -10,7 +10,6 @@
             <div id="data_chart"></div>
             <el-button round size="mini" slot="reference"><span style="font-size: 10px">具体数据</span></el-button>
         </el-popover>
-
     </div>
 </template>
 

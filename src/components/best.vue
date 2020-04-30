@@ -35,30 +35,41 @@
             <div id="player_card_youqianwei"><card></card></div>
         </div>
 
-        <div class="single_data" v-if=content_show[1]><charts></charts></div>
-        <div class="single_data" v-if=content_show[2]><charts></charts></div>
-        <div class="single_data" v-if=content_show[3]><charts></charts></div>
-        <div class="single_data" v-if=content_show[4]><charts></charts></div>
-        <div class="single_data" v-if=content_show[5]><charts></charts></div>
+        <div class="single_data" v-if=content_show[1]><charts_speed></charts_speed></div>
+        <div class="single_data" v-if=content_show[2]><charts_power></charts_power></div>
+        <div class="single_data" v-if=content_show[3]><charts_attack></charts_attack></div>
+        <div class="single_data" v-if=content_show[4]><charts_IQ></charts_IQ></div>
+        <div class="single_data" v-if=content_show[5]><charts_skill></charts_skill></div>
+        <div class="single_data" v-if=content_show[6]><charts_club></charts_club></div>
     </div>
 </template>
 
 <script>
     import card from "@/components/card";
-    import charts from "@/components/charts";
+    import charts_speed from "@/components/chart/charts_speed";
+    import charts_power from "@/components/chart/charts_power";
+    import charts_attack from "@/components/chart/charts_attack";
+    import charts_IQ from "@/components/chart/charts_IQ";
+    import charts_skill from "@/components/chart/charts_skill";
+    import charts_club from "@/components/chart/charts_club";
     export default {
         name: "best",
         components:{
-          card: card,
-          charts:charts
+            card: card,
+            charts_speed:charts_speed,
+            charts_power:charts_power,
+            charts_attack:charts_attack,
+            charts_IQ:charts_IQ,
+            charts_skill:charts_skill,
+            charts_club:charts_club
         },
         data() {
             return {
                 detail_data:[
-                    "最佳阵容","速度排名","力量排名","进攻排名","球商排名","技术排名"
+                    "最佳阵容","速度排名","力量排名","进攻排名","球商排名","技术排名","俱乐部排行"
                 ],
                 content_show:[
-                    true,false,false,false,false,false
+                    true,false,false,false,false,false,false
                 ]
             };
         },

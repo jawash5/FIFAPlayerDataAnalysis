@@ -1,5 +1,6 @@
+
 <template>
-    <div id="data_chart">132{{ content }}</div>
+    <div id="data_chart">{{ club }}  {{ club_value }}</div>
 </template>
 
 <script>
@@ -7,22 +8,23 @@
         name: "data_chart",
         data(){
             return{
-                content:null
+                club:[],
+                club_value:[]
             }
         },
         mounted () {
-            this.axios.get('localhost:5000/data')
+            console.log('ok')
+            this.axios.get('http://127.0.0.1:5000/data')
                 .then(response => {
-                    this.content = response
-                    console.log('ok')
+                    this.club = response.data;
+
                 })
                 .catch(function (error) {
-                    console.log(error)
+                    console.log(error.response)
                 })
         }
     }
 </script>
 
 <style scoped>
-
 </style>
