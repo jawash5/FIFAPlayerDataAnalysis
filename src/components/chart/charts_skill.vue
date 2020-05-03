@@ -22,7 +22,7 @@
                         const skill = response.data.技术;
                         for(const key in skill){
                             this.skill_name.push(key);
-                            this.skill_value.push(parseInt(skill[key]));
+                            this.skill_value.push(Math.floor(parseFloat(skill[key])*100)/100);
                         }
                         this.$nextTick(() => {
                             let option = {

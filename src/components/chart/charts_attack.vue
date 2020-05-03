@@ -22,7 +22,7 @@
                         const attack = response.data.进攻;
                         for(const key in attack){
                             this.attack_name.push(key);
-                            this.attack_value.push(parseInt(attack[key]));
+                            this.attack_value.push(Math.floor(parseFloat(attack[key])*100)/100);
                         }
                         this.$nextTick(() => {
                             let option = {

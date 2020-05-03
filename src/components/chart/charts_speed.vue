@@ -22,7 +22,7 @@
                         const speed = response.data.速度;
                         for(const key in speed){
                             this.speed_name.push(key);
-                            this.speed_value.push(parseInt(speed[key]));
+                            this.speed_value.push(Math.floor(parseFloat(speed[key])*100)/100);
                         }
                         // console.log(this.speed_value)
                         this.$nextTick(() => {

@@ -22,17 +22,17 @@
         <h3 class="title1">最强球场十一人</h3>
 
         <div id="best_11" v-if=content_show[0]>
-            <div id="player_card_shoumen"><card></card></div>
-            <div id="player_card_zuoqianfeng"><card></card></div>
-            <div id="player_card_youqianfeng"><card></card></div>
-            <div id="player_card_qianfeng"><card></card></div>
-            <div id="player_card_zhonghouwei"><card></card></div>
-            <div id="player_card_zuohouwei"><card></card></div>
-            <div id="player_card_youhouwei"><card></card></div>
-            <div id="player_card_zhongqianwei"><card></card></div>
-            <div id="player_card_zhongfeng"><card></card></div>
-            <div id="player_card_zuoqianwei"><card></card></div>
-            <div id="player_card_youqianwei"><card></card></div>
+            <div id="player_card_shoumen"><card element_id="shoumen" index=0></card></div>
+            <div id="player_card_zuoqianfeng"><card element_id="zuoqianfeng" index=1></card></div>
+            <div id="player_card_youqianfeng"><card element_id="youqianfeng" index=2></card></div>
+            <div id="player_card_qianfeng"><card element_id="qianfeng" index=3></card></div>
+            <div id="player_card_zhonghouwei"><card element_id="zhonghouwei" index=4></card></div>
+            <div id="player_card_zuohouwei"><card element_id="zuohouwei" index=5></card></div>
+            <div id="player_card_youhouwei"><card element_id="youhouwei" index=6></card></div>
+            <div id="player_card_zhongqianwei"><card element_id="zhongqianwei" index=7></card></div>
+            <div id="player_card_zhongfeng"><card element_id="zhongfeng" index=8></card></div>
+            <div id="player_card_zuoqianwei"><card element_id="zuoqianwei" index=9></card></div>
+            <div id="player_card_youqianwei"><card element_id="youqianwei" index=10></card></div>
         </div>
 
         <div class="single_data" v-if=content_show[1]><charts_speed></charts_speed></div>
@@ -52,6 +52,7 @@
     import charts_IQ from "@/components/chart/charts_IQ";
     import charts_skill from "@/components/chart/charts_skill";
     import charts_club from "@/components/chart/charts_club";
+
     export default {
         name: "best",
         components:{
@@ -61,7 +62,7 @@
             charts_attack:charts_attack,
             charts_IQ:charts_IQ,
             charts_skill:charts_skill,
-            charts_club:charts_club
+            charts_club:charts_club,
         },
         data() {
             return {

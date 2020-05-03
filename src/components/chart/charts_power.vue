@@ -22,7 +22,7 @@
                         const power = response.data.力量;
                         for(const key in power){
                             this.power_name.push(key);
-                            this.power_value.push(parseInt(power[key]));
+                            this.power_value.push(Math.floor(parseFloat(power[key])*100)/100);
                         }
                         // console.log(this.power_value)
                         this.$nextTick(() => {

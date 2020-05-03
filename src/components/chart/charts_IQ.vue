@@ -22,7 +22,7 @@
                         const IQ = response.data.球商;
                         for(const key in IQ){
                             this.IQ_name.push(key);
-                            this.IQ_value.push(parseInt(IQ[key]));
+                            this.IQ_value.push(Math.floor(parseFloat(IQ[key])*100)/100);
                         }
                         this.$nextTick(() => {
                             let option = {

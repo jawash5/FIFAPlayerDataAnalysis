@@ -22,7 +22,7 @@
                         const club = response.data.club;
                         for(const key in club){
                             this.club_name.push(key);
-                            this.club_value.push(parseInt(club[key]));
+                            this.club_value.push(Math.floor(parseFloat(club[key])*100)/100);
                         }
                         this.$nextTick(() => {
                             let option = {
