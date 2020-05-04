@@ -27,7 +27,7 @@
                         this.$nextTick(() => {
                             let option = {
                                 title: {
-                                    text: '俱乐部综合排行',
+                                    text: '俱乐部综合排名',
                                 },
                                 tooltip: {
                                     trigger: 'axis',
