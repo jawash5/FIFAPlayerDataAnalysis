@@ -19,7 +19,7 @@
             </el-tabs>
         </div>
 
-        <h3 class="title1">最强球场十一人</h3>
+        <h3 class="title1" v-if=content_show[0]>最佳阵容</h3>
 
         <div id="best_11" v-if=content_show[0]>
             <div id="player_card_shoumen"><card element_id="shoumen" index=0></card></div>
@@ -67,7 +67,7 @@
         data() {
             return {
                 detail_data:[
-                    "最佳阵容","速度排名","力量排名","进攻排名","球商排名","技术排名","俱乐部排行"
+                    "最佳阵容","速度排名","力量排名","进攻排名","球商排名","技术排名","俱乐部排名"
                 ],
                 content_show:[
                     true,false,false,false,false,false,false
