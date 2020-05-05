@@ -17,7 +17,7 @@
             draw_chart_club(){
                 let myChart = this.$echarts.init(document.getElementById('charts'))
 
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const club = response.data.club;
                         for(const key in club){

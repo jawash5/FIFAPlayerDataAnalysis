@@ -53,7 +53,7 @@
         methods: {
             draw_chart_shoumen(){
                 let myChart = this.$echarts.init(document.getElementById('shoumen'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -122,7 +122,7 @@
             },
             draw_chart_zuoqianfeng(){
                 let myChart = this.$echarts.init(document.getElementById('zuoqianfeng'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -190,7 +190,7 @@
             },
             draw_chart_youqianfeng(){
                 let myChart = this.$echarts.init(document.getElementById('youqianfeng'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -259,7 +259,7 @@
             },
             draw_chart_qianfeng(){
                 let myChart = this.$echarts.init(document.getElementById('qianfeng'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -327,7 +327,7 @@
             },
             draw_chart_zuohouwei(){
                 let myChart = this.$echarts.init(document.getElementById('zuohouwei'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -395,7 +395,7 @@
             },
             draw_chart_youhouwei(){
                 let myChart = this.$echarts.init(document.getElementById('youhouwei'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -463,7 +463,7 @@
             },
             draw_chart_zuoqianwei(){
                 let myChart = this.$echarts.init(document.getElementById('zuoqianwei'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -531,7 +531,7 @@
             },
             draw_chart_youqianwei(){
                 let myChart = this.$echarts.init(document.getElementById('youqianwei'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -599,7 +599,7 @@
             },
             draw_chart_zhongqianwei(){
                 let myChart = this.$echarts.init(document.getElementById('zhongqianwei'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -667,7 +667,7 @@
             },
             draw_chart_zhongfeng(){
                 let myChart = this.$echarts.init(document.getElementById('zhongfeng'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){
@@ -735,7 +735,7 @@
             },
             draw_chart_zhonghouwei(){
                 let myChart = this.$echarts.init(document.getElementById('zhonghouwei'))
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const overall = response.data.zonghe;
                         for(const key in overall){

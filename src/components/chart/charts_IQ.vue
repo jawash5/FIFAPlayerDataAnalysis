@@ -17,7 +17,7 @@
             draw_chart_IQ(){
                 let myChart = this.$echarts.init(document.getElementById('charts'))
 
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const IQ = response.data.qiushang;
                         for(const key in IQ){

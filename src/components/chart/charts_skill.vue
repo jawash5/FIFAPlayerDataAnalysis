@@ -17,7 +17,7 @@
             draw_chart_skill(){
                 let myChart = this.$echarts.init(document.getElementById('charts'))
 
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const skill = response.data.jishu;
                         for(const key in skill){

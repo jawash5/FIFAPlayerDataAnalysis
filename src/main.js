@@ -11,6 +11,7 @@ Vue.use(vueAxios, axios)
 Vue.prototype.$echarts = echarts
 Vue.use(ElementUI);
 
+
 router.beforeEach((to,from, next)=>{
   if(to.meta.title) {
     document.title = to.meta.title
@@ -21,6 +22,11 @@ router.beforeEach((to,from, next)=>{
 new Vue({
   el: '#app',
   router,
+  data: function(){
+    return {
+        URL: 'http://127.0.0.1:5000/data',
+    }
+  },
   render: h => h(App)
 });
 

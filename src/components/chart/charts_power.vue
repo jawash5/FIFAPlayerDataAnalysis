@@ -17,7 +17,7 @@
             draw_chart_power(){
                 let myChart = this.$echarts.init(document.getElementById('charts'))
 
-                this.axios.get('http://127.0.0.1:5000/data')
+                this.axios.get(this.$root.URL)
                     .then(response => {
                         const power = response.data.liliang;
                         for(const key in power){
