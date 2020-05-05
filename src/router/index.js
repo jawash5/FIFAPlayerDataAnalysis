@@ -12,20 +12,26 @@ export  default  new Router(
             {
                 path:'/',
                 name:'first',
-                component:first
+                component:first,
+                meta:{
+                    title:'首页'
+                }
             },
             {
-                //路由路径
                 path:'/best',
-                //路由名称
                 name:'best',
-                //跳转到组件
-                component:best
+                component:best,
+                meta:{
+                    title:'分析'
+                }
             },
             {
                 path:'/test',
                 name:'test',
-                component:test
+                component:test,
+                meta:{
+                    title:'测试'
+                }
             }
         ]
     }

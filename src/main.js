@@ -11,6 +11,12 @@ Vue.use(vueAxios, axios)
 Vue.prototype.$echarts = echarts
 Vue.use(ElementUI);
 
+router.beforeEach((to,from, next)=>{
+  if(to.meta.title) {
+    document.title = to.meta.title
+  }
+  next()
+})
 
 new Vue({
   el: '#app',
