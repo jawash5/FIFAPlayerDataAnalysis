@@ -19,7 +19,7 @@
 
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const attack = response.data.进攻;
+                        const attack = response.data.jingong;
                         for(const key in attack){
                             this.attack_name.push(key);
                             this.attack_value.push(Math.floor(parseFloat(attack[key])*100)/100);

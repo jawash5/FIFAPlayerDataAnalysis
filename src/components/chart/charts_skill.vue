@@ -19,7 +19,7 @@
 
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const skill = response.data.技术;
+                        const skill = response.data.jishu;
                         for(const key in skill){
                             this.skill_name.push(key);
                             this.skill_value.push(Math.floor(parseFloat(skill[key])*100)/100);

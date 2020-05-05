@@ -19,7 +19,7 @@
 
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const IQ = response.data.球商;
+                        const IQ = response.data.qiushang;
                         for(const key in IQ){
                             this.IQ_name.push(key);
                             this.IQ_value.push(Math.floor(parseFloat(IQ[key])*100)/100);

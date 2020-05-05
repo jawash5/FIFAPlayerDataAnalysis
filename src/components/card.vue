@@ -55,24 +55,24 @@
                 let myChart = this.$echarts.init(document.getElementById('shoumen'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.shoumen_overall.push(overall_attack[this.overall_name[0]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.shoumen_overall.push(overall_skill[this.overall_name[0]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.shoumen_overall.push(overall_speed[this.overall_name[0]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.shoumen_overall.push(overall_power[this.overall_name[0]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.shoumen_overall.push(overall_IQ[this.overall_name[0]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.shoumen_overall.push(overall_defense[this.overall_name[0]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.shoumen_overall.push(overall_goalkeeper[this.overall_name[0]]);
 
                         for(let i=0; i<this.shoumen_overall.length; i++) {
@@ -124,24 +124,24 @@
                 let myChart = this.$echarts.init(document.getElementById('zuoqianfeng'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.zuoqianfeng_overall.push(overall_attack[this.overall_name[1]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.zuoqianfeng_overall.push(overall_skill[this.overall_name[1]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.zuoqianfeng_overall.push(overall_speed[this.overall_name[1]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.zuoqianfeng_overall.push(overall_power[this.overall_name[1]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.zuoqianfeng_overall.push(overall_IQ[this.overall_name[1]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.zuoqianfeng_overall.push(overall_defense[this.overall_name[1]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.zuoqianfeng_overall.push(overall_goalkeeper[this.overall_name[1]]);
 
                         for(let i=0; i<this.zuoqianfeng_overall.length; i++) {
@@ -192,24 +192,24 @@
                 let myChart = this.$echarts.init(document.getElementById('youqianfeng'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.youqianfeng_overall.push(overall_attack[this.overall_name[2]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.youqianfeng_overall.push(overall_skill[this.overall_name[2]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.youqianfeng_overall.push(overall_speed[this.overall_name[2]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.youqianfeng_overall.push(overall_power[this.overall_name[2]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.youqianfeng_overall.push(overall_IQ[this.overall_name[2]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.youqianfeng_overall.push(overall_defense[this.overall_name[2]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.youqianfeng_overall.push(overall_goalkeeper[this.overall_name[2]]);
 
                         for(let i=0; i<this.youqianfeng_overall.length; i++) {
@@ -261,24 +261,24 @@
                 let myChart = this.$echarts.init(document.getElementById('qianfeng'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.qianfeng_overall.push(overall_attack[this.overall_name[3]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.qianfeng_overall.push(overall_skill[this.overall_name[3]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.qianfeng_overall.push(overall_speed[this.overall_name[3]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.qianfeng_overall.push(overall_power[this.overall_name[3]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.qianfeng_overall.push(overall_IQ[this.overall_name[3]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.qianfeng_overall.push(overall_defense[this.overall_name[3]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.qianfeng_overall.push(overall_goalkeeper[this.overall_name[3]]);
 
                         for(let i=0; i<this.qianfeng_overall.length; i++) {
@@ -329,24 +329,24 @@
                 let myChart = this.$echarts.init(document.getElementById('zuohouwei'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.zuohouwei_overall.push(overall_attack[this.overall_name[4]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.zuohouwei_overall.push(overall_skill[this.overall_name[4]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.zuohouwei_overall.push(overall_speed[this.overall_name[4]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.zuohouwei_overall.push(overall_power[this.overall_name[4]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.zuohouwei_overall.push(overall_IQ[this.overall_name[4]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.zuohouwei_overall.push(overall_defense[this.overall_name[4]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.zuohouwei_overall.push(overall_goalkeeper[this.overall_name[4]]);
 
                         for(let i=0; i<this.zuohouwei_overall.length; i++) {
@@ -397,24 +397,24 @@
                 let myChart = this.$echarts.init(document.getElementById('youhouwei'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.youhouwei_overall.push(overall_attack[this.overall_name[5]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.youhouwei_overall.push(overall_skill[this.overall_name[5]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.youhouwei_overall.push(overall_speed[this.overall_name[5]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.youhouwei_overall.push(overall_power[this.overall_name[5]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.youhouwei_overall.push(overall_IQ[this.overall_name[5]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.youhouwei_overall.push(overall_defense[this.overall_name[5]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.youhouwei_overall.push(overall_goalkeeper[this.overall_name[5]]);
 
                         for(let i=0; i<this.youhouwei_overall.length; i++) {
@@ -465,24 +465,24 @@
                 let myChart = this.$echarts.init(document.getElementById('zuoqianwei'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.zuoqianwei_overall.push(overall_attack[this.overall_name[6]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.zuoqianwei_overall.push(overall_skill[this.overall_name[6]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.zuoqianwei_overall.push(overall_speed[this.overall_name[6]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.zuoqianwei_overall.push(overall_power[this.overall_name[6]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.zuoqianwei_overall.push(overall_IQ[this.overall_name[6]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.zuoqianwei_overall.push(overall_defense[this.overall_name[6]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.zuoqianwei_overall.push(overall_goalkeeper[this.overall_name[6]]);
 
                         for(let i=0; i<this.zuoqianwei_overall.length; i++) {
@@ -533,24 +533,24 @@
                 let myChart = this.$echarts.init(document.getElementById('youqianwei'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.youqianwei_overall.push(overall_attack[this.overall_name[7]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.youqianwei_overall.push(overall_skill[this.overall_name[7]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.youqianwei_overall.push(overall_speed[this.overall_name[7]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.youqianwei_overall.push(overall_power[this.overall_name[7]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.youqianwei_overall.push(overall_IQ[this.overall_name[7]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.youqianwei_overall.push(overall_defense[this.overall_name[7]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.youqianwei_overall.push(overall_goalkeeper[this.overall_name[7]]);
 
                         for(let i=0; i<this.youqianwei_overall.length; i++) {
@@ -601,24 +601,24 @@
                 let myChart = this.$echarts.init(document.getElementById('zhongqianwei'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.zhongqianwei_overall.push(overall_attack[this.overall_name[8]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.zhongqianwei_overall.push(overall_skill[this.overall_name[8]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.zhongqianwei_overall.push(overall_speed[this.overall_name[8]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.zhongqianwei_overall.push(overall_power[this.overall_name[8]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.zhongqianwei_overall.push(overall_IQ[this.overall_name[8]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.zhongqianwei_overall.push(overall_defense[this.overall_name[8]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.zhongqianwei_overall.push(overall_goalkeeper[this.overall_name[8]]);
 
                         for(let i=0; i<this.zhongqianwei_overall.length; i++) {
@@ -669,24 +669,24 @@
                 let myChart = this.$echarts.init(document.getElementById('zhongfeng'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.zhongfeng_overall.push(overall_attack[this.overall_name[9]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.zhongfeng_overall.push(overall_skill[this.overall_name[9]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.zhongfeng_overall.push(overall_speed[this.overall_name[9]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.zhongfeng_overall.push(overall_power[this.overall_name[9]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.zhongfeng_overall.push(overall_IQ[this.overall_name[9]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.zhongfeng_overall.push(overall_defense[this.overall_name[9]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.zhongfeng_overall.push(overall_goalkeeper[this.overall_name[9]]);
 
                         for(let i=0; i<this.zhongfeng_overall.length; i++) {
@@ -737,24 +737,24 @@
                 let myChart = this.$echarts.init(document.getElementById('zhonghouwei'))
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const overall = response.data.综合;
+                        const overall = response.data.zonghe;
                         for(const key in overall){
                             this.overall_name.push(key);
                             this.overall_value.push(Math.floor(parseFloat(overall[key])*100)/100);
                         }
-                        const overall_attack = response.data.overall_进攻;
+                        const overall_attack = response.data.overall_jingong;
                         this.zhonghouwei_overall.push(overall_attack[this.overall_name[10]]);
-                        const overall_skill = response.data.overall_技术;
+                        const overall_skill = response.data.overall_jishu;
                         this.zhonghouwei_overall.push(overall_skill[this.overall_name[10]]);
-                        const overall_speed = response.data.overall_速度;
+                        const overall_speed = response.data.overall_sudu;
                         this.zhonghouwei_overall.push(overall_speed[this.overall_name[10]]);
-                        const overall_power = response.data.overall_力量;
+                        const overall_power = response.data.overall_liliang;
                         this.zhonghouwei_overall.push(overall_power[this.overall_name[10]]);
-                        const overall_IQ = response.data.overall_球商;
+                        const overall_IQ = response.data.overall_qiushang;
                         this.zhonghouwei_overall.push(overall_IQ[this.overall_name[10]]);
-                        const overall_defense = response.data.overall_防守;
+                        const overall_defense = response.data.overall_fangshou;
                         this.zhonghouwei_overall.push(overall_defense[this.overall_name[10]]);
-                        const overall_goalkeeper = response.data.overall_守门;
+                        const overall_goalkeeper = response.data.overall_shoumen;
                         this.zhonghouwei_overall.push(overall_goalkeeper[this.overall_name[10]]);
 
                         for(let i=0; i<this.zhonghouwei_overall.length; i++) {

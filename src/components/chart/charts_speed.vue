@@ -19,7 +19,7 @@
 
                 this.axios.get('http://127.0.0.1:5000/data')
                     .then(response => {
-                        const speed = response.data.速度;
+                        const speed = response.data.sudu;
                         for(const key in speed){
                             this.speed_name.push(key);
                             this.speed_value.push(Math.floor(parseFloat(speed[key])*100)/100);
